@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Default Suite" parallel="methods">
+    <test name="flink-challenge-chrome">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="test.java.E2eFlowTest">
+                <methods>
+                    <include name="e2eTest"/>
+                </methods>
+            </class> <!-- test.java.E2eFlowTest -->
+        </classes>
+    </test> <!-- flink-challenge -->
+    <test name="flink-challenge-firefox">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="test.java.E2eFlowTest">
+                <methods>
+                    <include name="e2eTest"/>
+                </methods>
+            </class> <!-- test.java.E2eFlowTest -->
+        </classes>
+    </test> <!-- flink-challenge -->
+</suite> <!-- Default Suite -->
